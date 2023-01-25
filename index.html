@@ -18,7 +18,7 @@
         <div>
             <label for="phone">Cell Phone:</label>
             <input
-              type="number"
+              type="text"
               maxlength="9"
               id="phone"
               name="phone"
@@ -43,10 +43,9 @@
               id="pass"
               placeholder="Minimum eight characters, at least one letter and one number;" />
         </div>
-       
+    
         <div id="boxes">
-
-          <label for="hobbies">Hobbies:</label>
+            <span id="hobby"><label for="hobbies">Hobbies:</label></span>
 
           <label for="music" class="container"><input type="checkbox" id="music" required /><span class="checkmark"></span> Music</label>
           
@@ -54,12 +53,12 @@
           
           <label for="dance" class="container"><input type="checkbox" id="dance" required/><span class="checkmark"></span>Dance</label>
           
-          <label for="photo" class="container"><input type="checkbox" id="photo" disabled required /> <span class="checkmark"></span>Photography</label>
+          <label id="photo" for="photo" class="container"><input type="checkbox" id="photo" disabled required /> <span class="checkmark"></span>Photography</label>
           
         </div>
         <div id="ageDiv">
           <label for="age">Age</label>
-          <span id="idade">18</span>
+          <span id="idade">18:</span>
           <input id="rangeInput" type="range" min="18" max="99" value="18" />
         </div>
         <button id="button">Submit</button>
